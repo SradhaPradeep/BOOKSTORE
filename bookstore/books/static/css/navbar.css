@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+/* Common styles for the footer */
+
+footer {
+    text-align: center;
+
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin: 0; /* Add this line to remove the gap at the bottom */
+}
+
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:white;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+
+
+.hero-image {
+    background-image: url("{% static 'image/bookk.jpg'  %}"); /* Replace 'your-image-url.jpg' with your actual image URL */
+    background-size: cover;
+    background-position: none;
+    height: 500%; /* Adjust the height as needed */
+}
+
+
+/* CSS for the count badge inside the shopping cart icon */
+.fa-stack[data-count]:after {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    content: attr(data-count);
+    font-size: 14px; /* Adjust font size as needed */
+    padding: 0.2em 0.5em; /* Adjust padding as needed */
+    border-radius: 50%;
+    line-height: 1;
+    color: red;
+
+    background: red; /* Background color for the badge */
+    text-align: center;
+    min-width: 1em; /* Adjust minimum width as needed */
+    font-weight: bold;
+}
+
+.fa-circle {
+    color: #333;
+}
+
+.red-cart {
+    color: red;
+    background: #333;
+}
+

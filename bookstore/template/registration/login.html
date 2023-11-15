@@ -1,0 +1,28 @@
+{% extends 'navbar.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+</head>
+<body style="background-image: url('{% static 'image/bookk.jpg' %}');" >
+<!--<h3>Login</h3>-->
+<div class="card-container" style="">
+    <h1 style="font-family:'Times New Roman', serif; text-align:center;font-size: 45px; font-weight: bold; color: #333;">Login</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+        <p>Create Account : <a href="{% url 'signup' %}" class="btn btn-outline-warning">Create a New Account</a></p>
+<!--        <a href="{% url 'signup' %}">Create a new account</a>-->
+    </form>
+</div>
+</body>
+</html>
+
+{% endblock content %}

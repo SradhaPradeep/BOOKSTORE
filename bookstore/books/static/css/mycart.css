@@ -1,0 +1,18 @@
+.container-fluid {
+    text-align: center;
+
+    padding: 10px;
+}
+.list-group {
+    margin-top: 20px;
+}
+
+/* Add a border to each item */
+.row {
+    border: 3px solid #000; /* You can customize the border style here */
+    padding: 20px;
+    margin-bottom: 30px;
+    width:90%;
+}
+
+/* You can add more custom styles as needed */

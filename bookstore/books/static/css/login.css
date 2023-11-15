@@ -1,0 +1,63 @@
+body {
+    background-image: url(); /* Replace 'your-image-url.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+/* Style for the card or box container */
+.card-container {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 800px; /* Adjust the maximum width as needed */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom:2em;
+}
+
+/* Style for the form inside the card or box */
+.card-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left:18%;
+    margin-right:18%;
+}
+
+.card-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.card-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.card-container a {
+    display: inline;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    box
+}
+
+.card-container a:hover {
+    text-decoration: underline;
+}
+
+
